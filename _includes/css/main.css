@@ -955,19 +955,19 @@ section.success,
     font-weight: 700;
 }
 
-.achievement-list strong {
+.achievement-list li > strong {
     display: block;
     margin: 4px 0;
     color: #1f2a37;
     font-size: 17px;
 }
 
-.achievement-list strong a {
+.achievement-list li > strong a {
     color: inherit;
 }
 
-.achievement-list strong a:hover,
-.achievement-list strong a:focus {
+.achievement-list li > strong a:hover,
+.achievement-list li > strong a:focus {
     color: #2f6f73;
     text-decoration: none;
 }
@@ -976,6 +976,11 @@ section.success,
     display: block;
     color: #6a777d;
     font-style: normal;
+}
+
+.achievement-list em strong {
+    color: inherit;
+    font-size: inherit;
 }
 
 .achievement-meta {

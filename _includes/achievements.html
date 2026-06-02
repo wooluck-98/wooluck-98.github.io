@@ -1,0 +1,79 @@
+<!-- Projects, Awards and Patents Section -->
+<section id="achievements">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Projects, Awards & Patents</h2>
+        <hr class="star-primary">
+      </div>
+    </div>
+    <div class="row achievement-grid">
+      <div class="col-md-6">
+        <div class="achievement-panel">
+          <h3>Projects & Awards</h3>
+          {% assign awards = site.data.awards %}
+          {% if awards and awards.size > 0 %}
+          <ul class="achievement-list">
+            {% for award in awards %}
+            <li>
+              {% if award.year %}<span class="achievement-year">{{ award.year }}</span>{% endif %}
+              <strong>{{ award.title }}</strong>
+              {% if award.organization %}<em>{{ award.organization }}</em>{% endif %}
+              {% if award.category %}
+              <p class="achievement-meta">
+                <span class="achievement-chip">{{ award.category }}</span>
+              </p>
+              {% endif %}
+              {% if award.description %}<p>{{ award.description }}</p>{% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+          {% else %}
+          <p class="section-empty">Projects and awards will be updated soon.</p>
+          {% endif %}
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="achievement-panel">
+          <h3>Patents</h3>
+          {% assign patents = site.data.patents %}
+          {% if patents and patents.size > 0 %}
+          <ul class="achievement-list">
+            {% for patent in patents %}
+            <li>
+              {% if patent.year %}<span class="achievement-year">{{ patent.year }}</span>{% endif %}
+              <strong>
+                {% if patent.url %}
+                <a href="{{ patent.url }}" target="_blank" rel="noopener">{{ patent.title }}</a>
+                {% else %}
+                {{ patent.title }}
+                {% endif %}
+              </strong>
+              {% if patent.inventors %}<em>{{ patent.inventors }}</em>{% endif %}
+              {% if patent.status or patent.number or patent.application or patent.assignee %}
+              <p class="achievement-meta">
+                {% if patent.status %}<span class="achievement-chip">{{ patent.status }}</span>{% endif %}
+                {% if patent.number %}<span class="achievement-chip">{{ patent.number }}</span>{% endif %}
+                {% if patent.application %}<span class="achievement-chip">{{ patent.application }}</span>{% endif %}
+                {% if patent.assignee %}<span class="achievement-chip">{{ patent.assignee }}</span>{% endif %}
+              </p>
+              {% endif %}
+              {% if patent.filed or patent.granted or patent.note %}
+              <p class="achievement-note">
+                {% if patent.filed %}Filed: {{ patent.filed }}{% endif %}
+                {% if patent.filed and patent.granted %} | {% endif %}
+                {% if patent.granted %}Granted: {{ patent.granted }}{% endif %}
+                {% if patent.note %}{{ patent.note }}{% endif %}
+              </p>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+          {% else %}
+          <p class="section-empty">Patent records will be updated soon.</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

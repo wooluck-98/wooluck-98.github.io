@@ -1,0 +1,20 @@
+---
+modal-id: 2
+order: 2
+date: 2026-04-01
+title: EEG-based epileptic seizure prediction with patient-tailored spectral-spatial-temporal feature learning
+img: selected-sst-overview.jpg
+alt: EEG-based epileptic seizure prediction paper
+year: 2026
+publisher: Artificial Intelligence in Medicine
+topic: Seizure Prediction
+jcr_year: 2023
+impact_factor: "6.2"
+impact_badge: "IF 6.2"
+jcr_category: MEDICAL INFORMATICS
+jcr_quartile: Q1
+jcr_rank: "4/44"
+jcr_percentile: "92.0%"
+top_percentile: "8.0%"
+abstract: Epilepsy is a chronic brain disorder characterized by recurrent seizures resulting from abnormal brain cell activity. The unpredictability of these seizures underscores the criticality of anticipating and promptly addressing them to enhance the patient’s overall quality of life. Electroencephalography (EEG) is a frequently employed technique for seizure prediction, leveraging its economic viability and high temporal resolution. However, the complexity of EEG signals has driven interest in machine learning and deep learning for automated seizure prediction systems. Nevertheless, conventional approaches that employ predefined methodologies for analyzing seizures may not adequately account for the variability in spectral and spatial characteristics among patients. To address these limitations and present a more effective and interpretable approach, we introduce the patient-tailored seizure prediction network (PSP-Net) for adaptive spectral–spatial–temporal EEG feature representation learning. PSP-Net combines patient-tailored bandpass filters, a patient-tailored spatial coupling matrix, and an attentive temporal convolution network-based feature extractor in a unified framework to automatically extract patient-specific spectral–spatial–temporal features from EEG data. The proposed method achieves state-of-the-art performance on multiple publicly available seizure datasets, which highlights its potential as a reliable tool for personalized clinical applications.
+---

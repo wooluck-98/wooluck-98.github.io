@@ -1,15 +1,15 @@
 # Site settings
 title: Woohyeok Choi
 email: woohyeok_choi@korea.ac.kr
-url: https://github.com/wooluck-98/wooluck-98.github.io
-description: "AI Researcher - Neuranl Engineering - Brain Decoding / AI in Epilepsy"
+url: "https://wooluck-98.github.io"
+baseurl: ""
+description: "AI Researcher - Neural Engineering - Brain Decoding / AI in Epilepsy"
 keywords: "AI, Epilepsy, Brain Decoding, Neural Engineering"
-skills: "AI Researcher - Neuranl Engineering - Brain Decoding / AI in Epilepsy"
+skills: "AI Researcher - Neural Engineering - Brain Decoding / AI in Epilepsy"
 meta_author: Woohyeok Choi
 
 # Google webmaster tools
 google_verify:
-
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
 
@@ -25,16 +25,16 @@ disqus_shortname: myshortname
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 18bc9c #80B3FF
-  primary-rgb: "24,288,156" #"128,179,255"
-  secondary: 2c3e50 #FD6E8A
-  secondary-dark: 233140 #A2122F
+  primary: 2f6f73
+  primary-rgb: "47,111,115"
+  secondary: 1f2a37
+  secondary-dark: 111827
 
 # Footer settings
 footer:
-  # copyright: Dr. Henry Jekyll
+  copyright: Woohyeok Choi
   # location: Location
-  social: Around the Web
+  social: Links
   # credits: Credits
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
@@ -47,11 +47,17 @@ social:
   #   url: http://stackoverflow.com/questions/tagged/jekyll
   # # - title: bitbucket
   # #   url: http://bitbucket.org/jekyll
-  - title: google scholar
+  - title: Google Scholar
+    icon: graduation-cap
+    icon_style: fa-solid
     url: https://scholar.google.com/citations?user=O6GdY4AAAAAJ&hl=ko
-  - title: linkedin
+  - title: LinkedIn
+    icon: linkedin
+    icon_style: fa-brands
     url: https://www.linkedin.com/in/woohyeok-choi-91b725285/
-  - title: github
+  - title: GitHub
+    icon: github
+    icon_style: fa-brands
     url: http://github.com/wooluck-98
 
 # Postal address (add as many lines as necessary)
@@ -72,4 +78,4 @@ defaults:
       path: ""
       type: "posts"
     values:
-      permalink: ""
+      permalink: /portfolio/:title/

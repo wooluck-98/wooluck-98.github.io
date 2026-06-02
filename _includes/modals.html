@@ -1,5 +1,6 @@
 <!-- Portfolio Modals -->
-{% for post in site.posts %}
+{% assign selected_posts = site.posts | sort: "order" %}
+{% for post in selected_posts %}
 <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog"
   aria-hidden="true">
   <div class="modal-content">
@@ -16,23 +17,61 @@
             <h2>{{ post.title }}</h2>
             <hr class="star-primary">
             <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-            {% if post.description %}
-            <p>{{ post.description }}</p>
+            {% if post.abstract %}
+            <div class="modal-abstract">
+              <h3>Abstract</h3>
+              <p>{{ post.abstract }}</p>
+            </div>
             {% endif %}
-            <ul class="list-inline item-details">
-              {% if post.client %}
-              <li>Client:
-                <strong>{{ post.client }}</strong>
+            <ul class="list-inline item-details selected-paper-modal-details">
+              {% if post.publisher %}
+              <li>Publisher:
+                <strong>{{ post.publisher }}</strong>
               </li>
               {% endif %}
-              {% if post.project-date %}
-              <li>Date:
-                <strong>{{ post.project-date }}</strong>
+              {% if post.year %}
+              <li>Year:
+                <strong>{{ post.year }}</strong>
               </li>
               {% endif %}
-              {% if post.category %}
-              <li>Service:
-                <strong>{{ post.category }}</strong>
+              {% if post.topic %}
+              <li>Topic:
+                <strong>{{ post.topic }}</strong>
+              </li>
+              {% endif %}
+              {% if post.impact_factor %}
+              <li>IF:
+                <strong>{{ post.impact_factor }}</strong>
+              </li>
+              {% endif %}
+              {% if post.jcr_year %}
+              <li>JCR:
+                <strong>{{ post.jcr_year }}</strong>
+              </li>
+              {% endif %}
+              {% if post.jcr_category %}
+              <li>Category:
+                <strong>{{ post.jcr_category }}</strong>
+              </li>
+              {% endif %}
+              {% if post.jcr_quartile %}
+              <li>Quartile:
+                <strong>{{ post.jcr_quartile }}</strong>
+              </li>
+              {% endif %}
+              {% if post.jcr_rank %}
+              <li>JIF Rank:
+                <strong>{{ post.jcr_rank }}</strong>
+              </li>
+              {% endif %}
+              {% if post.jcr_percentile %}
+              <li>JIF Percentile:
+                <strong>{{ post.jcr_percentile }}</strong>
+              </li>
+              {% endif %}
+              {% if post.top_percentile %}
+              <li>Top:
+                <strong>{{ post.top_percentile }}</strong>
               </li>
               {% endif %}
             </ul>

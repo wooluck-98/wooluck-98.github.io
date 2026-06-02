@@ -1,0 +1,30 @@
+- year: "2023"
+  category: "Project"
+  title: "2023 AI Voucher Support Project"
+  organization: "Ministry of Science and ICT / IITP"
+
+- year: "2022"
+  category: "Project"
+  title: "2022 Data Voucher Support Project"
+  organization: "Korea Data Agency"
+
+- year: "2021.12"
+  category: "Award"
+  title: "[First Prize] Forest Tree Data Online Hackathon"
+  organization: "Korea Information Society Promotion Agency"
+
+- year: "2021.02"
+  category: "Award"
+  title: "[First Prize] Solar Power Generation Prediction AI Competition"
+  organization: "DACON"
+
+- year: "2021"
+  category: "Outsourcing"
+  title: "Development of a CFD-Based Wind Tunnel Experiment Prediction Model"
+  organization: "The Catholic University of Korea / Englink Co., Ltd."
+
+- year: "2021"
+  category: "Outsourcing"
+  title: "Barrier-Free Subtitle Production Automation System"
+  organization: "OROT PLANET"
+  # description: "Outsourcing project"

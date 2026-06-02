@@ -1,0 +1,53 @@
+<!-- Selected Papers Section -->
+<section id="selected-papers">
+  <div class="container portfolio-flex-grid">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Selected Papers</h2>
+        <hr class="star-primary">
+      </div>
+    </div>
+    {% assign selected_posts = site.posts | sort: "order" %}
+    {% if selected_posts.size > 0 %}
+    <div class="portfolio-flex-row selected-paper-row">
+      {% for post in selected_posts limit:3 %}
+      <div class="portfolio-flex-item portfolio-item selected-paper-card">
+        <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+          <div class="caption">
+            <div class="caption-content">
+              <i class="fa fa-search-plus fa-3x"></i>
+            </div>
+          </div>
+          <img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
+          <div class="selected-paper-info">
+            <h3>{{ post.title }}</h3>
+            <ul class="selected-paper-toggles">
+              {% if post.publisher %}
+              <li class="wide"><strong>{{ post.publisher }}</strong></li>
+              {% endif %}
+              {% if post.year %}
+              <li><strong>{{ post.year }}</strong></li>
+              {% endif %}
+              {% if post.topic %}
+              <li><strong>{{ post.topic }}</strong></li>
+              {% endif %}
+              {% if post.impact_badge %}
+              <li class="impact"><strong>{{ post.impact_badge }}</strong></li>
+              {% elsif post.impact_factor %}
+              <li class="impact"><strong>IF {{ post.impact_factor }}</strong></li>
+              {% endif %}
+            </ul>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <p class="section-empty">Selected papers will be updated soon.</p>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</section>

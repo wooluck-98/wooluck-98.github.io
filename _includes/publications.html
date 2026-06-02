@@ -1,0 +1,44 @@
+<!-- Publications Section -->
+<section class="section-muted" id="publications">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Publications</h2>
+        <hr class="star-primary">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1">
+        {% assign publications = site.data.publications %}
+        {% if publications and publications.size > 0 %}
+        <ol class="publication-list">
+          {% for paper in publications %}
+          <li class="publication-item">
+            <span class="publication-year">{{ paper.year }}</span>
+            <div>
+              <h3>
+                {% if paper.url %}
+                <a href="{{ paper.url }}" target="_blank" rel="noopener">{{ paper.title }}</a>
+                {% else %}
+                {{ paper.title }}
+                {% endif %}
+              </h3>
+              {% if paper.authors %}
+              <p class="paper-authors">{{ paper.authors }}</p>
+              {% endif %}
+              <p class="publication-venue">
+                {% if paper.type %}<span>{{ paper.type }}</span>{% endif %}
+                {% if paper.venue %}<span>{{ paper.venue }}</span>{% endif %}
+                {% if paper.pdf %}<a class="publication-pdf" href="{{ paper.pdf }}" target="_blank" rel="noopener">PDF</a>{% endif %}
+              </p>
+            </div>
+          </li>
+          {% endfor %}
+        </ol>
+        {% else %}
+        <p class="section-empty">Publication records will be updated soon.</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

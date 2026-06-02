@@ -1,0 +1,20 @@
+---
+modal-id: 1
+order: 1
+date: 2022-05-06
+title: Deep convolutional gated recurrent unit combined with attention mechanism to classify pre-ictal from interictal EEG with minimized number of channels
+img: selected-dcgru-overview.jpg
+alt: Deep convolutional gated recurrent unit seizure prediction paper
+year: 2022
+publisher: Journal of Personalized Medicine
+topic: Seizure Prediction
+jcr_year: 2020
+impact_factor: "4.9"
+impact_badge: "IF 4.9"
+jcr_category: HEALTH CARE SCIENCES & SERVICES
+jcr_quartile: Q1
+jcr_rank: "15/107"
+jcr_percentile: "86.45%"
+top_percentile: "13.55%"
+abstract: The early prediction of epileptic seizures is important to provide appropriate treatment because it can notify clinicians in advance. Various EEG-based machine learning techniques have been used for automatic seizure classification based on subject-specific paradigms. However, because subject-specific models tend to perform poorly on new patient data, a generalized model with a cross-patient paradigm is necessary for building a robust seizure diagnosis system. In this study, we proposed a generalized model that combines one-dimensional convolutional layers (1D CNN), gated recurrent unit (GRU) layers, and attention mechanisms to classify preictal and interictal phases. When we trained this model with ten minutes of preictal data, the average accuracy over eight patients was 82.86%, with 80% sensitivity and 85.5% precision, outperforming other state-of-the-art models. In addition, we proposed a novel application of attention mechanisms for channel selection. The personalized model using three channels with the highest attention score from the generalized model performed better than when using the smallest attention score. Based on these results, we proposed a model for generalized seizure predictors and a seizure-monitoring system with a minimized number of EEG channels.
+---

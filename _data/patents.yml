@@ -1,10 +1,5 @@
-- title: "Deep Learning-Based Method for Predicting Epileptic Seizures with Minimal Electrodes Considering Epileptic Onset Location"
-  inventors: "<strong><u>Woohyeok Choi</u></strong>, Tae-Eui Kam"
-  status: "Patent Application"
-  number: "KR1020240039590"
-  # note: "Application metadata pending public disclosure."
-
-- title: "Deep Learning-Based Method for Predicting Epileptic Seizures with Minimal Electrodes Considering Epileptic Onset Location"
+- year: "2025"
+  title: "Deep Learning-Based Method for Predicting Epileptic Seizures with Minimal Electrodes Considering Epileptic Onset Location"
   inventors: "<strong><u>Woohyeok Choi</u></strong>, Tae-Eui Kam"
   status: "Technology Transfer"
   assignee: "Knoclab Co., Ltd."
@@ -41,3 +36,10 @@
   status: "Registered Patent"
   number: "KR102772393B1"
   url: "https://patents.google.com/patent/KR102772393B1/en"
+
+- year: "2024"
+  title: "Deep Learning-Based Method for Predicting Epileptic Seizures with Minimal Electrodes Considering Epileptic Onset Location"
+  inventors: "<strong><u>Woohyeok Choi</u></strong>, Tae-Eui Kam"
+  status: "Patent Application"
+  number: "KR1020240039590"
+  # note: "Application metadata pending public disclosure."

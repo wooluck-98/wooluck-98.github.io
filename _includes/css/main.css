@@ -865,6 +865,7 @@ section.success,
 
 .paper-meta span,
 .publication-venue span,
+.publication-award,
 .publication-pdf {
     display: inline-block;
     padding: 4px 9px;
@@ -873,6 +874,19 @@ section.success,
     background: #e8eef5;
     font-size: 13px;
     font-weight: 700;
+}
+
+.publication-award {
+    border: 1px solid #c6a15b;
+    color: #795719;
+    background: #fbf5e8;
+}
+
+.publication-award:hover,
+.publication-award:focus {
+    color: #fff;
+    background: #9a722e;
+    text-decoration: none;
 }
 
 .publication-pdf {

@@ -29,6 +29,13 @@
               <p class="publication-venue">
                 {% if paper.type %}<span>{{ paper.type }}</span>{% endif %}
                 {% if paper.venue %}<span>{{ paper.venue }}</span>{% endif %}
+                {% if paper.award %}
+                  {% if paper.award_url %}
+                  <a class="publication-award" href="{{ paper.award_url }}" target="_blank" rel="noopener">{{ paper.award }}</a>
+                  {% else %}
+                  <span class="publication-award">{{ paper.award }}</span>
+                  {% endif %}
+                {% endif %}
                 {% if paper.pdf %}<a class="publication-pdf" href="{{ paper.pdf }}" target="_blank" rel="noopener">PDF</a>{% endif %}
               </p>
             </div>

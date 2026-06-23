@@ -601,6 +601,30 @@ header .intro-text .name {
     color: #fff;
 }
 
+header .profile-meta {
+    display: block;
+    margin: 18px auto 0;
+    color: rgba(255, 255, 255, .82);
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+header .profile-meta span {
+    display: block;
+}
+
+header .profile-meta .profile-affiliation {
+    color: rgba(255, 255, 255, .88);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+header .profile-meta .profile-email {
+    margin-top: 2px;
+    color: rgba(255, 255, 255, .78);
+    font-size: 16px;
+}
+
 header .intro-text .skills {
     display: block;
     max-width: 980px;
@@ -1100,6 +1124,18 @@ footer .footer-below {
 
     header .intro-text .name {
         font-size: 2.35em;
+    }
+
+    header .profile-meta {
+        font-size: 15px;
+    }
+
+    header .profile-meta .profile-affiliation {
+        font-size: 15px;
+    }
+
+    header .profile-meta .profile-email {
+        font-size: 15px;
     }
 
     header .intro-text .skills {

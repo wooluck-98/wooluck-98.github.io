@@ -1,6 +1,7 @@
 # Site settings
 title: Woohyeok Choi
 email: woohyeok_choi@korea.ac.kr
+affiliation: "Department of Artificial Intelligence, Korea University"
 url: "https://wooluck-98.github.io"
 baseurl: ""
 description: "AI Researcher - Neural Engineering - Brain Decoding / AI in Epilepsy"
@@ -14,8 +15,8 @@ google_verify:
 bing_verify:
 
 # Contact form:
-# - static : pass through formspree.io to validate email sending
-# - disqus : replace contact form by disqus thread
+# - static: pass through formspree.io to validate email sending
+# - disqus: replace contact form by disqus thread
 # - comment the line below if you want to stick with the default PHP contact form
 contact: static
 
@@ -37,16 +38,8 @@ footer:
   social: Links
   # credits: Credits
 
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+# Social networks usernames
 social:
-  # - title: twitter
-  #   url: http://twitter.com/jekyllrb
-  # - title: facebook
-  #   url:
-  # - title: stack-overflow
-  #   url: http://stackoverflow.com/questions/tagged/jekyll
-  # # - title: bitbucket
-  # #   url: http://bitbucket.org/jekyll
   - title: Google Scholar
     icon: graduation-cap
     icon_style: fa-solid
@@ -72,7 +65,7 @@ social:
 markdown: kramdown
 permalink: pretty
 
-#for posts
+# for posts
 defaults:
   - scope:
       path: ""

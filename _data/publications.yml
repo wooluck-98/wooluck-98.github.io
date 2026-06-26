@@ -82,7 +82,7 @@
   pdf: "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10931751"
 - title: "SeeEEG: Semantic-aware EEG-based Multi-Modal Retrieval-Augmented Generation for High-Fidelity Visual Brain Decoding"
   authors: "Jun-Mo Kim<sup>✝</sup>, <strong><u>Woohyeok Choi<sup>✝</sup></u></strong>, Sang-Jun Park, Keun-Soo Heo, Young-Han Son, Ji-Hye Oh, Dong-Hee Shin, Tae-Eui Kam"
-  venue: "IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)"
+  venue: "IEEE/CVF International Conference on Computer Vision Workshops (ICCV/W)"
   year: "2025"
   type: "Conference"
   pdf: "https://openaccess.thecvf.com/content/ICCV2025W/HCV/papers/Kim_SeeEEG_Semantic-aware_EEG-based_Multi-Modal_Retrieval-Augmented_Generation_for_High-Fidelity_Visual_Brain_ICCVW_2025_paper.pdf"

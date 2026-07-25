@@ -17,7 +17,13 @@
             {% for award in awards %}
             <li>
               {% if award.year %}<span class="achievement-year">{{ award.year }}</span>{% endif %}
-              <strong>{{ award.title }}</strong>
+              <strong>
+                {% if award.url %}
+                <a href="{{ award.url }}" target="_blank" rel="noopener">{{ award.title }}</a>
+                {% else %}
+                {{ award.title }}
+                {% endif %}
+              </strong>
               {% if award.organization %}<em>{{ award.organization }}</em>{% endif %}
               {% if award.category %}
               <p class="achievement-meta">

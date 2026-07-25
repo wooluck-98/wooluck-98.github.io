@@ -2,6 +2,13 @@
   category: "Award"
   title: "[Honorable Mention in AI & Agents] CroSS: Cross-subject Visual Brain Decoding via Soft Alignment and Subject-aware Batch Normalization"
   organization: "The 41st ACM/SIGAPP Symposium on Applied Computing (SAC 2026)"
+  url: "https://www.sigapp.org/sac/sac2026/"
+
+- year: "2023.10"
+  category: "Award"
+  title: "[Special Award] SCON: AI-based Deepfake Video Detection"
+  organization: "2023 Military AI CompetitiON (MAICON)"
+  url: "https://maicon.kr/scon/"
 
 - year: "2023"
   category: "Project"
